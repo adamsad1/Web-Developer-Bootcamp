@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+    <form action="http://www.google.com">
+
+        <label for="first-name">First Name:</label>
+        <input name="first-name" id="first-name" type="text" placeholder="John" required>
+
+        <label for="last-name">Last Name:</label>
+        <input name="last-name" id="last-name" type="text" placeholder="Smith" required>
+
+        <br>
+
+        <label for="male">Male</label>
+        <input name="gender" id="male" type="radio" value="male" required>
+
+        <label for="female">Female</label>
+        <input name="gender" id="female" type="radio" value="female" required>
+
+        <label for="other">Other</label>
+        <input name="gender" id="other" type="radio" value="other" required>
+
+        <br>
+
+        <label for="email">Email:</label>
+        <input id="email" type="email" placeholder="your email" required>
+
+        <label for="password">Password:</label>
+        <input id="password" type="password" minlength="5" maxlength="10" required>
+
+        <br>
+
+        <label for="birthday">Birthday:</label>
+        <select name="month">
+            <option id="birthday" selected disabled>Month</option>
+            <option id="birthday" value="Jan">Jan</option>
+            <option id="birthday" value="Feb">Feb</option>
+            <option id="birthday" value="Mar">Mar</option>
+            <option id="birthday" value="Apr">Apr</option>
+        </select>
+
+        <select name="day">
+            <option id="birthday" selected disabled>Day</option>
+            <option id="birthday" value="1">1</option>
+            <option id="birthday" value="2">2</option>
+            <option id="birthday" value="3">3</option>
+        </select>
+
+        <select name="year">
+            <option id="birthday" selected disabled>Year</option>
+            <option id="birthday" value="2001">2001</option>
+            <option id="birthday" value="2002">2002</option>
+            <option id="birthday" value="2003">2003</option>
+        </select>
+
+        <br>
+
+        <label for="agree">I agree to the terms and conditions</label>
+        <input type="checkbox" required>
+
+        <br>
+
+        <button>Submit</button>
+    </form>
+</body>
+</html>
