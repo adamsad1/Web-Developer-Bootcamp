@@ -1,21 +1,10 @@
-var age = prompt("What is your age?");
+var secretNumber = 4;
+var guess = prompt("Guess a number");
 
-if (age < 0){
-    console.log("Error");
-} else if (age < 18) {
-    console.log("You cannot enter");
-} else if (age < 21) {
-    console.log("You cannot drink");
-} else if (age == 21) {
-    console.log("happy 21st birthday");
+if(Number(guess) === secretNumber) {
+    alert("You got it right");
+} else if(Number(guess) > secretNumber) {
+    alert("Too high");
 } else {
-    console.log("you may enter");
-}
-
-if (age % 2 !== 0) {
-    console.log("your age is odd");
-}
-
-if (Math.sqrt(age) % 1 == 0){
-    console.log("perfect square");
+    alert("Too low");
 }
