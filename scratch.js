@@ -1,10 +1,15 @@
-var secretNumber = 4;
-var guess = Number(prompt("Guess a number"));
+var todos = []
 
-if(guess === secretNumber) {
-    alert("You got it right");
-} else if(guess > secretNumber) {
-    alert("Too high");
-} else {
-    alert("Too low");
+var input = prompt("What would you like to do?");
+
+while(input !== "quit") {
+    if(input === "list") {
+        console.log(todos);
+    } else if (input === "new") {
+        var newTodo = prompt("Enter new todo");
+        todos.push(newTodo);
+    }
+    input = prompt("What would you like to do?");
 }
+
+console.log("Okay, you quit the app");
