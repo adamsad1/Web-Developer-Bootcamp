@@ -43,4 +43,4 @@ function max(arr) {
     return result;
 };
 
-console.log(max([10,3,10,4]));
+console.log(max([10,3,20,4]));
